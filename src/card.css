@@ -1,0 +1,11 @@
+.wrapper{
+
+    
+    box-shadow: 10px;
+    width: 340px;
+    height: 340px;
+}
+
+.wrapper p {
+    font-size: 12px;
+}
