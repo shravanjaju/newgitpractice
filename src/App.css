@@ -1,6 +1,13 @@
 .App {
   text-align: center;
 }
+.newdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #61dafb;
+}
 
 .App-logo {
   height: 40vmin;
