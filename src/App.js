@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Image from './Components/useEffects';
+import Fetchd from './Components/useFetchs';
 
 function App() {
   return (
-   <Image/>
+   <Fetchd/>
   );
 }
 
