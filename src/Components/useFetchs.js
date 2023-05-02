@@ -1,29 +1,32 @@
 import React from "react";
-import { useState} from "react";
 import './useFetch.css'
 
-export default function Fetchd(){
-    const[image,setImage]=useState("https://dog.ceo/api/breeds/image/random")
+export default function Fetchdata(){
+    fetch('https://reqres.in/api/users/')
+    .then(response=>{
+        if(!response.ok){
+            throw Error("Error")}
+            return response.json()
+    })
+    .then(data=>{
+        console.log(data.data)
+        const html=data.data.map(user=>{
+            return `
+                <div class="user">
 
-   async function refreshData(){
-    try{
-        const response =await fetch("https://dog.ceo/api/breeds/image/random")
-        const data=await response.json()
-        setImage(data.message)
+                <p> <img src="${user.avatar}" alt="${user.first_name}"/> </p>
+                <p>Name: ${user.first_name}</p>
+                <p>Last Name: ${user.last_name}</p>
+                <p>Email: ${user.email}</p>
+                    </div>`
+        })
+        .join("")
+        // console.log(html)
+        document.querySelector("#app").insertAdjacentHTML("afterbegin",html)
+    })
+    .catch(error=>{
+        console.log(error)
+    })
 
-    }
-    catch(error){
-        console.log(error)}
-    }
-    return(
-        <div className="btnclass">
-            <img
-                src={image}
-                height={"500px"}
-                width={"500px"}
-                alt="img"/><br></br><br></br>
-            <button onClick={refreshData}>Refresh</button>
-                </div>
-    )
-
+  
 }
