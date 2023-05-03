@@ -20,13 +20,10 @@ export default function Fetchdata(){
                 <p>Email: ${user.email}</p>
                     </div>`
         })
-        .join("")
         // console.log(html)
         document.querySelector("#app").insertAdjacentHTML("afterbegin",html)
     })
     .catch(error=>{
         console.log(error)
     })
-
-  
 }
