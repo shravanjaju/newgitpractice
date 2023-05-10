@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import styles from './App.module.css'
-import TopBar from './Components/Molecules/Topbar';
+import ScrollBar from './Components/Molecules/Scrollbar';
 
 function App() {
   return (
     <div className={styles.App}>
-      <TopBar/>
+      <ScrollBar/>
     </div>
   );
 }
