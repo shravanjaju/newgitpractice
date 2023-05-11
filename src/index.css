@@ -11,3 +11,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.Appheader {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.heading{
+  font-size: 2rem;
+  color: wheat;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+  
+}
+
+.row{
+display: flex;
+flex-direction: row;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+
+}
+.center{
+  justify-content: center;
+
+}
+
+.b-bottom-right{
+  border-right: 15px solid aquamarine;
+  border-bottom: 15px solid aquamarine;
+}
+.b-button{
+  border-bottom: 15px solid aquamarine;
+}
+
+.b-right{
+  border-bottom: 15px solid aquamarine;
+}
+
+.clearbutton{
+  margin: 40px auto 10px auto;  
+}
+
+.squarecss{
+  padding: 50px;
+  font-size: 2rem;
+  font-weight: bolder;
+  min-height: 100px;
+  min-width: 100px;
+  text-align: center;
+  color: aqua;
+
+}
+
