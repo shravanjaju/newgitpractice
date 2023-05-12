@@ -19,7 +19,7 @@ import './Square.css'
     }
 
     const clearGame = () => {
-        updateGameState(clearState)]
+        updateGameState(clearState)
     }
     useEffect(() => {
         let winner = checkWinner()
