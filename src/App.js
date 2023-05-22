@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Todo from './Components/Molecules/ToDo';
+import AutocompleteSearchBar from './Components/Molecules/AutoSearch';
 
 function App() {
   return (
-    <Todo/>
+    <AutocompleteSearchBar/>
   );
 }
 
