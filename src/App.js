@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import AutocompleteSearchBar from './Components/Molecules/AutoSearch';
+import React from 'react';
+import { Provider } from 'react-redux';
+import TodoList from './TodoList';
+import store from './store';
 
-function App() {
+const App = () => {
   return (
-    <AutocompleteSearchBar/>
+    <Provider store={store}>
+      <TodoList />
+    </Provider>
   );
-}
+};
 
-export default App;
+export default App
