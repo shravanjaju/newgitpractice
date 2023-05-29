@@ -1,0 +1,7 @@
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.headingBox{
+    background-color: bisque;
+}
