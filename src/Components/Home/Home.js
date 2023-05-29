@@ -1,5 +1,5 @@
 import styles from './Home.module.css'
-import pic2 from '../../Images/admin.jpg'
+
 
 export default function Home(){
     return(
